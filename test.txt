@@ -1,3 +1,208 @@
 текст домашки
 
-Привет. А подскажи, пожалуйста,  нам можно из идеи на локалке пушить на github? а то нас с Костей на очередніе курсі отправили, а там надо домашку на гитхаб заливать
+1.
+JAVA HOME
+Напиши программу, которая выводит на экран надпись:
+JAVA HOME 10 раз
+---------------------------------------------------------------------------------------------------------------------------
+2.
+В методе main создай объект Man, сохрани ссылку на него в переменную man.
+Создай также объект Woman и сохрани ссылку на него в переменную woman.
+
+Подсказка: для создания объекта Woman и занесения его ссылки в переменную woman используй конструкцию:
+ТипПеременной имяПеременной = new ТипСоздаваемогоОбъекта();
+В man.wife сохрани ссылку на ранее созданный объект Woman.
+В woman.husband сохрани ссылку на ранее созданный объект Man (подсказка: woman.husband = man;).
+---------------------------------------------------------------------------------------------------------------------------
+3.
+Написать функцию, которая возвращает минимум из двух чисел.
+Подсказка:
+Нужно написать тело существующей функции min.
+public class Solution {
+    public static int min(int a, int b) {
+        //напишите тут ваш код
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(min(12, 33));
+        System.out.println(min(-20, 0));
+        System.out.println(min(-10, -20));
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+4.
+Добавь метод public static int convertToSeconds(int hour) который будет конвертировать часы в секунды.
+Вызови его дважды в методе main с любыми параметрами.
+Результаты выведи на экран, каждый раз с новой строки.
+public class Solution {
+    //напишите тут ваш код
+
+
+    public static void main(String[] args) {
+        //напишите тут ваш код
+        System.out.println(convertToSeconds(1));
+        System.out.println(convertToSeconds(2));
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+5.
+Таблица умножения
+Выведи на экран таблицу умножения 10 на 10 в следующем виде:
+1 2 3 4 ...
+2 4 6 8 ...
+3 6 9 12 ...
+4 8 12 16 ...
+...
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(multiplicationTable(1));
+        System.out.println(multiplicationTable(2));
+        System.out.println(multiplicationTable(3));
+        System.out.println(multiplicationTable(4));
+        System.out.println(multiplicationTable(5));
+        System.out.println(multiplicationTable(6));
+        System.out.println(multiplicationTable(7));
+        System.out.println(multiplicationTable(8));
+        System.out.println(multiplicationTable(9));
+        System.out.println(multiplicationTable(10));
+
+
+    }
+    public static String multiplicationTable (int number){
+        //напишите тут ваш код
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+6.
+Подсчитать суммарную стоимость яблок.
+За суммарную стоимость яблок отвечает переменная public static int applesPrice.
+public class Main {
+    public static void main(String[] args) {
+        Apple apple = new Apple();
+        apple.addPrice(50);
+        Apple apple2 = new Apple();
+        apple2.addPrice(100);
+        System.out.println("Стоимость яблок " + Apple.applesPrice);
+    }
+
+    public static class Apple {
+        public static int applesPrice = 0;
+
+        public static void addPrice(int applesPrice) {
+            //напишите тут ваш код
+
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+7.
+Реализуте метод setName.
+public class Human {
+    private String name = "человек";
+
+    public void setName(String name) {
+        //напишите тут ваш код
+
+    }
+
+    public static void main(String[] args) {
+        Human human = new Human();
+        human.setName("Макс");
+        System.out.println(human.name);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+8.
+Времена года
+Напишите метод checkSeason. По номеру месяца, метод должен определить время года (зима, весна, лето, осень) и вывести на экран.
+
+Пример для номера месяца 2:
+зима
+
+Пример для номера месяца 5:
+весна
+Примечание: реализовать 2 способами используя операторы if, switch
+public class Main {
+    public static void main(String[] args) {
+        checkSeason(12);
+        checkSeason(4);
+        checkSeason(7);
+        checkSeason(10);
+    }
+
+    public static void checkSeason(int month) {
+        //напишите тут ваш код
+        //if
+
+        //switch
+
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------
+9.
+Создать класс Human. У человека должно быть имя (name, String), возраст (age, int), вес (weight, int), сила (strength, int).
+---------------------------------------------------------------------------------------------------------------------------
+10.
+Геттеры и сеттеры для класса Dog
+Создать class Dog. У собаки должна быть кличка String name и возраст int age.
+Создайте геттеры и сеттеры для всех переменных класса Dog.
+---------------------------------------------------------------------------------------------------------------------------
+11.
+Задача: Программа вводит два числа с клавиатуры и выводит их максимум в виде "The max is 25".
+public class Main {
+    public static int max = 100;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String text = "The max is ";
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        ////напишите тут ваш код
+
+        System.out.println(text + max);
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------
+12.
+Чётные и нечётные цифры
+Ввести с клавиатуры положительное число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
+Если число делится без остатка на 2 (т. е. остаток равен нулю), значит оно четное.
+Увеличиваем на 1 счетчик четных цифр (статическая переменная even).
+Иначе число нечетное, увеличиваем счетчик нечетных цифр (статическая переменная odd).
+Вывести на экран сообщение: "Even: а Odd: b", где а - количество четных цифр, b - количество нечетных цифр.
+
+Пример для числа 4445:
+Even: 3 Odd: 1
+
+public class Main {
+
+    public static int even;
+    public static int odd;
+
+    public static void main(String[] args) throws IOException {
+        //напишите тут ваш код
+
+        System.out.println("Even: " + even + " Odd: " + odd);
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------
+13.
+Найти максимальное число в массиве
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        int[] array = initializeArray();
+        int max = max(array);
+        System.out.println(max);
+    }
+
+    public static int[] getArray() throws IOException {
+        // создай и заполни массив
