@@ -55,7 +55,6 @@ public class Main {
             System.out.println("Стоимость яблок " + Apple.applesPrice);
         }
 
-
         }
     }
 
